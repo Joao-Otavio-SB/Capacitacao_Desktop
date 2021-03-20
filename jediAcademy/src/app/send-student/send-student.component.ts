@@ -10,7 +10,7 @@ export class SendStudentComponent implements OnInit {
 
   constructor() { }
 
-  newstudent: Student = {name: "",isJedi: false}
+  newstudent: Student
   @Output() sendStudent = new EventEmitter<Student>()
 
   ngOnInit(): void {

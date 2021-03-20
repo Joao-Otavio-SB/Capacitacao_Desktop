@@ -1,5 +1,5 @@
 <div>
-    <textarea #studentName ></textarea>
-    <input type="checkbox" #studentType>isJedi
-    <button (click)="newStudent(studentName.value, studentType.checked); studentName.value=''; studentType.checked=false">Send</button>
+    <textarea #studentName (keyup.enter)="studentType.focus()"></textarea>
+    <input type="checkbox" #studentType (keyup.enter)="studentType.checked=!studentType.checked">isJedi
+    <button #send (click)="newStudent(studentName.value, studentType.checked); studentName.value=''; studentType.checked=false">Send</button>
 </div>

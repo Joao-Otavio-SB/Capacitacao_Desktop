@@ -1,4 +1,4 @@
-<div *ngIf="student">
+<div *ngIf="student.name">
     Student: <a href="#" (click)="clicked()">{{student.name}}</a>
     <button (click)="deleteStudent()">Delete</button>
     <div *ngIf="student.isJedi">
@@ -6,4 +6,3 @@
         <textarea #description></textarea>
     </div>
 </div>
-<p *ngIf="!student"></p>

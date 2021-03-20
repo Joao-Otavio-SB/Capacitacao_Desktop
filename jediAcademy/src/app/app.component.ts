@@ -23,4 +23,8 @@ export class AppComponent {
     this.students.splice(pos, 1)
   }
 
+  delAll(){
+    this.students = []
+  }
+
 }
