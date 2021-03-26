@@ -1,0 +1,10 @@
+.header a{
+    display: flex;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+}
+
+.header .titleGroup{
+    margin-left: 20px;
+}

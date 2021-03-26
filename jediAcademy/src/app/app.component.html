@@ -1,6 +1,0 @@
-<jad-header></jad-header>
-
-<jad-student *ngFor="let student of students" [student]="student" (delStudent)="deleteStudent($event)"></jad-student>
-
-<jad-send-student (sendStudent)="addStudent($event)"></jad-send-student>
-<button (click)="delAll()">Delete All</button>
