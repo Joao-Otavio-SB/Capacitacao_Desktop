@@ -1,3 +1,4 @@
+import { HeaderService } from './../header/header.service';
 import { Product } from './product.model';
 import { Router } from '@angular/router';
 import { ProductService } from './product.service';
@@ -10,9 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateProductComponent implements OnInit {
 
-  product: Product = { name: '', price: 0}
+  product: Product = { name: '', price: 0 }
 
-  constructor(private productService: ProductService, private router: Router) { }
+  constructor(
+    private productService: ProductService,
+    private router: Router,
+    private headerService: HeaderService
+  ) {
+    headerService.headerData = {
+      title : 'Adicionar Produto',
+      icon : 'home',
+      routeUrl : ''
+    }
+  }
 
   ngOnInit(): void {
   }

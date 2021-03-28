@@ -1,3 +1,4 @@
+import { ProductUpdateComponent } from './product-update/product-update.component';
 import { ProductComponent } from './product/product.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
@@ -13,8 +14,12 @@ const routes: Routes = [{
     component: ProductComponent
   },
   {
-    path: 'create-product',
+    path: 'product/create-product',
     component: CreateProductComponent
+  },
+  {
+    path: 'product/product-update/:id',
+    component: ProductUpdateComponent
   }
 ];
 

@@ -1,10 +1,10 @@
 <mat-toolbar class='header mat-elevation-z4'>
-    <span><a routerLink="/">Logo</a></span>
+    <span class="logo"><a routerLink="{{ routeUrl }}">Logo</a></span>
 
     <span class="titleGroup">
         <i class="material-icons">
-            <a>home</a>
+            <a>{{ icon }}</a>
         </i>
-        app name
+        {{ title }}
     </span>
 </mat-toolbar>
