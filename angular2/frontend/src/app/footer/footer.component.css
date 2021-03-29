@@ -5,6 +5,16 @@
     justify-content: flex-end;
 }
 
+.footer img{
+    display: flex;
+    width: 150px
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+
 .footer span{
     font-size: 1rem;
     font-weight: 300;

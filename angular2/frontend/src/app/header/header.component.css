@@ -1,6 +1,7 @@
 .header{
     display: flex;
     align-items: center;
+    color: black;
 }
 
 .header a{
@@ -12,9 +13,15 @@
 
 .header .logo{
     max-height: 32px;
+    display: flex;
+}
+
+.header img{
+    width: 62px;
 }
 
 .header .titleGroup{
+    margin-top: 5px;
     margin-left: 20px;
 }
 

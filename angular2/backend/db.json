@@ -1,9 +1,39 @@
 {
   "products": [
     {
-      "name": "safdfds",
-      "price": 0,
+      "name": "Big Mac",
+      "price": "26.90",
       "id": 1
+    },
+    {
+      "name": "Quarterão com queijo",
+      "price": "26.50",
+      "id": 3
+    },
+    {
+      "name": "Cheddar McMelt",
+      "price": "28.50",
+      "id": 4
+    },
+    {
+      "name": "McPicanha",
+      "price": "30.90",
+      "id": 5
+    },
+    {
+      "name": "McFritas Cheddar Bacon",
+      "price": "11.90",
+      "id": 6
+    },
+    {
+      "name": "McShake",
+      "price": "11.90",
+      "id": 7
+    },
+    {
+      "name": "Refrigerante (700ml)",
+      "price": "13.90",
+      "id": 8
     }
   ]
 }

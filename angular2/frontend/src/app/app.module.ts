@@ -23,9 +23,11 @@ import { ProductComponent } from './product/product.component';
 import { CreateProductComponent } from './create-product/create-product.component';
 import { ReadProductComponent } from './read-product/read-product.component';
 
+import { MatDialogModule } from '@angular/material/dialog';
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from "@angular/common";
 import { ProductUpdateComponent } from './product-update/product-update.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 registerLocaleData(localePt)
 
@@ -39,7 +41,8 @@ registerLocaleData(localePt)
     ProductComponent,
     CreateProductComponent,
     ReadProductComponent,
-    ProductUpdateComponent
+    ProductUpdateComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +58,8 @@ registerLocaleData(localePt)
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatTableModule
+    MatTableModule,
+    MatDialogModule
   ],
   providers: [{
     provide: LOCALE_ID,
