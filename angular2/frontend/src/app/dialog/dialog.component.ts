@@ -12,7 +12,4 @@ export class DialogComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  pDelete(del: boolean){
-    return del
-  }
 }
