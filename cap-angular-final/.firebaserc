@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angulartasks-bc277": {
+      "hosting": {
+        "cap-angular-final": [
+          "angulartasks-bc277"
+        ]
+      }
+    }
+  }
+}
