@@ -1,9 +1,5 @@
-<mat-toolbar class="toolBar">
+<mat-toolbar color="primary" class="mat-elevated-z4" class="toolBar">
   <span>Angular Firebase Tasks</span>
 </mat-toolbar>
 
-<ul>
-  <li class="text" *ngFor="let task of task$ | async">
-    {{ task.title }}
-  </li>
-</ul>
+<app-task-list></app-task-list>

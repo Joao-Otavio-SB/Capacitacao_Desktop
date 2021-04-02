@@ -1,7 +1,4 @@
-import { Task } from './models/task.model';
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -10,13 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit{
 
-  task$!: Observable<Task[]>;
-
-  constructor(
-    private db: AngularFirestore
-  ) {}
+  constructor(  ) {}
 
   ngOnInit(): void{
-    this.task$ = this.db.collection<Task>('/tasks').valueChanges();
   }
 }
